@@ -1,0 +1,12 @@
+<div class="jumbotron center">
+	<h1>CBC Innovative Technologies</h1>
+	<% if user_signed_in? %>
+		Intranet Coming Soon
+	<% else %>
+		<p>
+			<%= link_to "Secure Login",new_user_session_path, class: "btn btn-default" %>
+			<%= link_to "Sign Up",new_user_registration_path, class: "btn btn-primary" %>
+		</p>
+	<% end %>
+
+</div>
